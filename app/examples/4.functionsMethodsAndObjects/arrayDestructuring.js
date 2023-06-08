@@ -1,9 +1,9 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Array Destructuring');
+console.logTitle('Array Destructuring');
 
 const names = ['Anna', 'Mariam', 'Joe', 'Mark', 'Matt'];
 
@@ -13,6 +13,6 @@ const names = ['Anna', 'Mariam', 'Joe', 'Mark', 'Matt'];
 
 const [anna, , joe, ...restOfNames] = names;
 
-log(`${anna} ${joe}`);
-log(restOfNames);
-log(restOfNames.length);
+console.log(`${anna} ${joe}`);
+console.log(restOfNames);
+console.log(restOfNames.length);

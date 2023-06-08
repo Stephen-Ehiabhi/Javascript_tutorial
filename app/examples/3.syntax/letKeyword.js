@@ -1,18 +1,18 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Let keyword');
+console.logTitle('Let keyword');
 
 for(var i = 0; i<10; i++){
-  log(i);
+  console.log(i);
 }
 
-log(i);
+console.log(i);
 
 for(let i = 0; i<10; i++){
-  log(i);
+  console.log(i);
 }
 
-log(i);
+console.log(i);

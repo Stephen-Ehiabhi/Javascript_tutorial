@@ -1,9 +1,9 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Arrow Functions');
+console.logTitle('Arrow Functions');
 
 const hello = () => {
   const es6 = 'ES6';
@@ -19,7 +19,7 @@ const add = (n1, n2) => n1 + n2;
 const milesToKm = miles => miles * 1.60934;
 
 
-log(hello());
-log(powers);
-log(add(100,100));
-log(milesToKm(300));
+console.log(hello());
+console.log(powers);
+console.log(add(100,100));
+console.log(milesToKm(300));

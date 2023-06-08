@@ -1,11 +1,3 @@
-/* styling */
-require("styles/main.scss");
-/* js */
-import $ from "jquery";
-import { log, logTitle } from "logger";
-/* your imports */
-logTitle("Break and Continue");
-/* coding examples */
 
 var persons = [
   { name: "Alex", age: 22 },
@@ -13,9 +5,9 @@ var persons = [
 ];
 
 // for (var i = 0; i <= persons.length; i++) {
-//   log(persons[i].name);
-//   log(persons[i].age);
-//   log("----------------")
+//   console.log(persons[i].name);
+//   console.log(persons[i].age);
+//   console.log("----------------")
 // }
 
 var number = 0;
@@ -27,7 +19,7 @@ while(number < 5) {
     continue;
   }
 
-  log(number);
+  console.log(number);
 
 }
 
@@ -35,5 +27,5 @@ while(number < 5) {
 
 // do {
 //   i ++;
-//   log(i)
+//   console.log(i)
 // } while(false);

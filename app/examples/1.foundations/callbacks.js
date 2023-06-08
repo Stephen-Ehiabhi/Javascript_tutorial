@@ -2,13 +2,13 @@
 require('styles/main.scss');
 /* js */
 import $ from 'jquery';
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Callbacks')
+console.logTitle('Callbacks')
 /* coding examples */
 
 function callbackExample(name, callback) {
-  log(callback(name));
+  console.log(callback(name));
 }
 
 var callback = function(name) {

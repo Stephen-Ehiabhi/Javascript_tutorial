@@ -1,9 +1,9 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Spread on Objects');
+console.logTitle('Spread on Objects');
 
 const address = {
   city: 'LA',
@@ -18,4 +18,4 @@ const name = {
 
 const person = { ...address, ...name };
 
-log(JSON.stringify(person, null, 2));
+console.log(JSON.stringify(person, null, 2));

@@ -2,14 +2,14 @@
 require("styles/main.scss");
 /* js */
 import $ from "jquery";
-import { log, logTitle } from "logger";
+import { console.log, console.logTitle } from "console.logger";
 /* your imports */
-logTitle("Functions");
+console.logTitle("Functions");
 /* coding examples */
 
 function addNumbers(n1, n2) {
   // start of function boddy
-  // Define logic
+  // Define console.logic
   // 3 + 2
   var result = n1+n2;
   return result;
@@ -17,4 +17,4 @@ function addNumbers(n1, n2) {
 }
 
 var result = addNumbers(10, 20);
-log(result)
+console.log(result)

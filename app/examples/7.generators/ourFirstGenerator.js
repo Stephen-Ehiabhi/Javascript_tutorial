@@ -1,9 +1,9 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Generators');
+console.logTitle('Generators');
 
 const getNumbers = function* () {
   yield 1;
@@ -15,8 +15,8 @@ const getNumbers = function* () {
 
 const numbersGen = getNumbers();
 
-log(numbersGen.next().value);
-log(numbersGen.next().value);
-log(numbersGen.next().value);
-log(JSON.stringify(numbersGen.next().value));
-log(numbersGen.next().value);
+console.log(numbersGen.next().value);
+console.log(numbersGen.next().value);
+console.log(numbersGen.next().value);
+console.log(JSON.stringify(numbersGen.next().value));
+console.log(numbersGen.next().value);

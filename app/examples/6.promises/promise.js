@@ -1,9 +1,9 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Promises');
+console.logTitle('Promises');
 
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
@@ -16,7 +16,7 @@ const promise = new Promise((resolve, reject) => {
 });
 
 promise.then(response => {
-  log(response);
+  console.log(response);
 }).catch(error => {
-  log(error);
+  console.log(error);
 })

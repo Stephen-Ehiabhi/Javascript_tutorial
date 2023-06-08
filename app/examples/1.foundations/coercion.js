@@ -2,29 +2,29 @@
 require("styles/main.scss");
 /* js */
 import $ from "jquery";
-import { log, logTitle } from "logger";
+import { console.log, console.logTitle } from "console.logger";
 /* your imports */
-logTitle("Equality without type coercion and 3 equals sign");
+console.logTitle("Equality without type coercion and 3 equals sign");
 /* coding examples */
-log("With type coercion")
-log(typeof 0 + " " + typeof false);
-log(0 == false);
+console.log("With type coercion")
+console.log(typeof 0 + " " + typeof false);
+console.log(0 == false);
 
-log(typeof "0" + " " + typeof false);
-log("0" == false);
+console.log(typeof "0" + " " + typeof false);
+console.log("0" == false);
 
-log(typeof 1 + " " + typeof "1");
-log(1 == "1");
+console.log(typeof 1 + " " + typeof "1");
+console.log(1 == "1");
 
-log("Without type coercion")
+console.log("Without type coercion")
 
-log(typeof 0 + " " + typeof false);
-log(0 === false);
+console.log(typeof 0 + " " + typeof false);
+console.log(0 === false);
 
-log(typeof "0" + " " + typeof false);
-log("0" === false);
+console.log(typeof "0" + " " + typeof false);
+console.log("0" === false);
 
-log(typeof 1 + " " + typeof "1");
-log(1 === "1");
+console.log(typeof 1 + " " + typeof "1");
+console.log(1 === "1");
 
 // != !==

@@ -1,8 +1,8 @@
-export default class Animal{
+export default class Animal {
   constructor() {
-    console.log("i am an animal");
+    console.console.log("i am an animal")
   }
   getClassType() {
-    return "Animal";
+    return "Animal"
   }
 }

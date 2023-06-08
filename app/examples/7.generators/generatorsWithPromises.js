@@ -1,12 +1,12 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
 
 import { coroutine as co } from 'bluebird';
 
-logTitle('Generators & Promises');
+console.logTitle('Generators & Promises');
 
 
 const getRandomUsers = co(function* (n) {
@@ -18,6 +18,6 @@ const getRandomUsers = co(function* (n) {
 getRandomUsers(10).then(randomUsers => {
   randomUsers.results.forEach(user => {
     const {gender, email} = user;
-    log(`${gender} - ${email}`);
+    console.log(`${gender} - ${email}`);
   });
-}).catch(err => log);
+}).catch(err => console.log);

@@ -1,35 +1,35 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('ES6 Classes');
+console.logTitle('ES6 Classes');
 
 class Animal {
   constructor(name, age) {
-    log(`${name} is an animal and was created`);
+    console.log(`${name} is an animal and was created`);
     this.name = name;
     this.age = age;
   }
 
   static iAmAstaticMethod() {
-    log('I am a static method inside of an Animal class');
+    console.log('I am a static method inside of an Animal class');
   }
 
   eat() {
-    log(`${this.name} is eating`);
+    console.log(`${this.name} is eating`);
   }
 
   sleep() {
-    log(`${this.name} is sleeping`);
+    console.log(`${this.name} is sleeping`);
   }
 
   wakeUp() {
-    log(`${this.name} is waking up`);
+    console.log(`${this.name} is waking up`);
   }
 
-  logAge() {
-    log(`${this.name} is ${this.age} year old`);
+  console.logAge() {
+    console.log(`${this.name} is ${this.age} year old`);
   }
 }
 
@@ -39,12 +39,12 @@ class Dog extends Animal {
     this.breed = breed;
   }
 
-  logBreed() {
-    log(`${this.name} is a ${this.breed}`);
+  console.logBreed() {
+    console.log(`${this.name} is a ${this.breed}`);
   }
 
-  logAgeFromDog() {
-    super.logAge();
+  console.logAgeFromDog() {
+    super.console.logAge();
   }
 }
 
@@ -53,23 +53,23 @@ class Cat extends Animal {
     super(name, age)
   }
 
-  logAgeFromCat() {
-    super.logAge();
+  console.logAgeFromCat() {
+    super.console.logAge();
   }
 }
 
 const mike = new Dog('Mike', 4, 'Bulldog');
-mike.logBreed();
-mike.logAgeFromDog();
+mike.console.logBreed();
+mike.console.logAgeFromDog();
 
-log('----------')
+console.log('----------')
 
 const josh = new Cat('Josh', 1);
-josh.logAgeFromCat();
+josh.console.logAgeFromCat();
 josh.eat();
 josh.sleep();
 josh.wakeUp();
-josh.logAge();
+josh.console.logAge();
 
 /*
 Animal.iAmAstaticMethod();
@@ -80,9 +80,9 @@ bobby.sleep();
 bobby.wakeUp();
 bobby.sleep();
 bobby.wakeUp();
-bobby.logAge();
+bobby.console.logAge();
 
-log('---------------');
+console.log('---------------');
 
 const marshall = new Animal("marshall", 3);
 marshall.eat();
@@ -90,5 +90,5 @@ marshall.sleep();
 marshall.wakeUp();
 marshall.sleep();
 marshall.wakeUp();
-marshall.logAge();
+marshall.console.logAge();
 */

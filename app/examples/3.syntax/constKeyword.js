@@ -1,15 +1,15 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Const keyword');
+console.logTitle('Const keyword');
 
 let name = 'Maria';
 name = {};
 name = 2;
 
-log(name);
+console.log(name);
 
 /* ************************* */
 
@@ -17,9 +17,9 @@ const person = {};
 
 person['name'] = 'Maria';
 
-log(person.name);
+console.log(person.name);
 
 const array = [];
 array.push('Maria from Array');
 
-log(array[0]);
+console.log(array[0]);

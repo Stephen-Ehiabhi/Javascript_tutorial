@@ -2,7 +2,7 @@
 require('styles/main.scss');
 /* js */
 import $ from 'jquery';
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Title')
+console.logTitle('Title')
 /* coding examples */

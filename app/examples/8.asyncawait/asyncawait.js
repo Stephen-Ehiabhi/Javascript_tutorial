@@ -2,13 +2,13 @@
 require("styles/main.scss");
 /* js */
 import $ from "jquery";
-import { log, logTitle } from "logger";
+import { console.log, console.logTitle } from "console.logger";
 /* your imports */
-logTitle("Async Await");
+console.logTitle("Async Await");
 /* coding examples */
 
-const logName = async (name) => {
-  log(name);
+const console.logName = async (name) => {
+  console.log(name);
   // 1. we can yield promises using await
   const transformName = new Promise((resolve, reject) => {
     setTimeout(() => resolve(name.toUpperCase()), 1000);
@@ -20,8 +20,8 @@ const logName = async (name) => {
   return result;
 }
 
-logName("antonio").then(res => {
-  log("result from async function = " + res);
+console.logName("antonio").then(res => {
+  console.log("result from async function = " + res);
 });
 
 ////////////
@@ -33,11 +33,11 @@ const getRandomUsers = async n => {
     const data = await fetchRandomUsers.json();
     data.results.forEach(user => {
       const {gender, email} = user;
-      log(`${gender} - ${email}`);
+      console.log(`${gender} - ${email}`);
     });
     return data;
   } catch(err) {
-    log(err);
+    console.log(err);
   }
 
 }

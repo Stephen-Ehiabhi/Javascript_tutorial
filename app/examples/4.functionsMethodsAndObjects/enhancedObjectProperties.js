@@ -1,9 +1,9 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Enhanced Object Properties');
+console.logTitle('Enhanced Object Properties');
 
 const pricePropName = "PRICE";
 
@@ -19,6 +19,6 @@ const calculator = (name, price) => {
 
 const calc = calculator('casio', 19.99);
 
-log(calc.name);
-log(calc.add(20, 20));
-log(calc.price);
+console.log(calc.name);
+console.log(calc.add(20, 20));
+console.log(calc.price);

@@ -1,9 +1,9 @@
 /* styling */
 require('styles/main.scss');
 /* js */
-import { log, logTitle } from 'logger';
+import { console.log, console.logTitle } from 'console.logger';
 /* your imports */
-logTitle('Object Descruturing');
+console.logTitle('Object Descruturing');
 
 const getUser = () => {
   return {
@@ -33,7 +33,7 @@ const doorNumber = user.address.fullAddress.doorNumber;
 const { name : theName, age : theAge, address : { country : theCountry } } = user;
 const { address : { fullAddress : { doorNumber : number } } } = user;
 
-log(theName);
-log(theAge);
-log(theCountry);
-log(number);
+console.log(theName);
+console.log(theAge);
+console.log(theCountry);
+console.log(number);
